@@ -1,0 +1,145 @@
+@media (max-width: 768px) {
+    .navbar-toggler {
+        height: 45px;
+        width: 50px;
+        position: relative;
+        top: 10px;
+        padding: 0;
+        right: 15px;
+        float: right;
+        border: 0;
+        background: #000;
+    }
+
+    .burger {
+        position: absolute;
+        background-color: #FECB2F;
+        width: 30px;
+        height: 4px;
+        right: 0;
+        border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        margin: 0 auto;
+        top: 20px;
+    }
+
+    .navbar-toggler:focus .burger {
+        background-color: #FECB2F;
+    }
+
+    .navbar-toggler:focus .burger::before,
+    .navbar-toggler:focus .burger::after {
+        background-color: #FECB2F;
+    }
+
+    .burger::before {
+        position: absolute;
+        background-color: #FECB2F;
+        width: 30px;
+        height: 4px;
+        top: 10px;
+        border-radius: 2px;
+        content: "";
+        display: block;
+    }
+
+    .burger::after {
+        position: absolute;
+        background-color: #FECB2F;
+        width: 30px;
+        height: 4px;
+        bottom: 10px;
+        border-radius: 2px;
+        content: "";
+        display: block;
+    }
+
+    .burger::after,
+    .burger::before,
+    .burger {
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+    }
+
+    .burger-menu {
+        display: block;
+        height: 100%;
+    }
+
+    .login_content {
+        background: #3B2F8C;
+        color: #fff;
+    }
+
+    .login_content h6{
+    	text-align: center;
+    }
+
+    .login_content .btn-primary {
+        background: #f7f7fc !important;
+        border-color: #f7f7fc !important;
+        color: #000;
+        width: 100%;
+    }
+
+    .form-link {
+        text-align: center;
+    }
+
+    .form-link a {
+        color: #fff !important;
+        display: block;
+        padding: 5px 0 !important;
+    }
+
+}
+
+@media (min-width: 1200px) {
+	.overlay {
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    #sidebar-wrapper {
+        display: none;
+    }
+}
+
+/**Change Boostrap Breakpoint*/
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}

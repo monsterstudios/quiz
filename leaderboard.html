@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Quiz - Leaderboard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="//placehold.it/200x60" class="img-responsive">
+                    </a>
+                    <button class="navbar-toggler hidden-lg hidden-md">
+                        <span class="burger-menu">
+                            <span class="burger"></span>
+                        </span>
+                    </button>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse hidden-xs">
+                    <form class="navbar-form navbar-left">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Games...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="#">Points: 200</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="sidebar-wrapper" class="sidebar-toggle">
+            <ul class="sidebar-nav">
+                <li class=""><a href="#"><img src="//placehold.it/200x60" class="img-responsive center-block"></a></li>
+                <li class=""><a href="#">Enterainment</a></li>
+                <li class=""><a href="#">Politics</a></li>
+                <li class=""><a href="#">Health</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body leaderboard">
+                            <h3>Leaderboard</h3>
+                            <div class="table-responsive">
+                                <table data-toggle="table" data-search="true" class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>Player</th>
+                                            <th>Points</th>
+                                            <th>W</th>
+                                            <th>L</th>
+                                            <th>Last Played</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Jane Gate</td>
+                                            <td>1</td>
+                                            <td>50</td>
+                                            <td>10</td>
+                                            <td>Jan 24, 2019</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>John Doe</td>
+                                            <td>10</td>
+                                            <td>50</td>
+                                            <td>10</td>
+                                            <td>Jan 24, 2019</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Billy Song</td>
+                                            <td>14</td>
+                                            <td>50</td>
+                                            <td>10</td>
+                                            <td>Jan 24, 2019</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>&copy; Copyrights 2020 Trivia. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
