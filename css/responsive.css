@@ -68,12 +68,22 @@
     }
 
     .login_content {
-        background: #3B2F8C;
-        color: #fff;
+        background: #FDCA43;
+        color: #000;
+        padding: 5em;
     }
 
-    .login_content h6{
-    	text-align: center;
+    .login_content h1 {
+        font-size: 22px;
+    }
+
+    .login_content h6 {
+        text-align: center;
+    }
+
+    .login_content form .btn {
+        margin: 10px 0;
+        width: 100%;
     }
 
     .login_content .btn-primary {
@@ -88,15 +98,31 @@
     }
 
     .form-link a {
-        color: #fff !important;
+        color: #000 !important;
         display: block;
         padding: 5px 0 !important;
+    }
+
+    .quiz-header li {
+        width: 50%;
+    }
+
+    .quiz-questions ul li {
+        width: 100%;
+    }
+
+    .dashboard li {
+        width: 100%;
+    }
+
+    .dashboard li a {
+        text-align: left;
     }
 
 }
 
 @media (min-width: 1200px) {
-	.overlay {
+    .overlay {
         min-height: 100vh;
         min-width: 100vw;
     }
@@ -111,35 +137,45 @@
     .navbar-header {
         float: none;
     }
-    .navbar-left,.navbar-right {
+
+    .navbar-left,
+    .navbar-right {
         float: none !important;
     }
+
     .navbar-toggle {
         display: block;
     }
+
     .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
+
     .navbar-fixed-top {
         top: 0;
         border-width: 0 0 1px;
     }
+
     .navbar-collapse.collapse {
-        display: none!important;
+        display: none !important;
     }
+
     .navbar-nav {
-        float: none!important;
+        float: none !important;
         margin-top: 7.5px;
     }
+
     .navbar-nav>li {
         float: none;
     }
+
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .collapse.in{
-        display:block !important;
+
+    .collapse.in {
+        display: block !important;
     }
 }

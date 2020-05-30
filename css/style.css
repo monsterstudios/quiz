@@ -166,7 +166,7 @@ h6 {
     height: 50px;
     border: none;
     box-shadow: none;
-    background: #FECB2F;
+    background: #FFFFFF;
     border-radius: 40px;
     padding: 5px 30px;
     font-weight: 700;
@@ -178,7 +178,7 @@ h6 {
 
 .navbar-default .navbar-form .input-group-btn>.btn {
     height: 50px;
-    background: transparent;
+    background: #FFFFFF;
     border: none;
     color: #333333;
     border-left: 0;
@@ -186,7 +186,7 @@ h6 {
 }
 
 .navbar-default .navbar-form .input-group-btn>.btn:hover {
-    color: #000000;
+    color: #FDCA43;
 }
 
 .navbar-default .navbar-form .input-group {
@@ -203,6 +203,10 @@ h6 {
 
 section {
     padding: 3em 0;
+}
+
+.breadcrumb>.active {
+    color: #fecb30;
 }
 
 .form-control:focus {
@@ -531,6 +535,7 @@ section {
     color: #000;
     width: 100%;
     padding: 30px;
+    border: 4px solid #000;
 }
 
 .quiz-header {
@@ -553,6 +558,10 @@ section {
 .quiz-header li h3 {
     font-size: 28px;
     font-weight: 700;
+}
+
+.game-bg{
+    background: url("../img/game-bg.jpg");
 }
 
 .quiz-questions {
