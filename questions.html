@@ -11,7 +11,7 @@
     <title>Quiz - Game</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -70,12 +70,39 @@
         </div>
     </header>
     <section>
+        <div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2>Amount won N20,000</h2>
+                        <p>Fill in your details to withdraw winnings</p>
+                        <form id="prize-form">
+                            <div class="form-group">
+                                <input type="number" class="form-control" name="" placeholder="Account Number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==11) return false;" required="">
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" required="">
+                                    <option disabled selected value>-- Select Bank --</option>
+                                    <option>Gtbank</option>
+                                    <option>Access Bank</option>
+                                    <option>Zenith Bank</option>
+                                    <option>Stanbic IBTC</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-block">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <ol class="breadcrumb">
-                      <li><a href="index.html">Games</a></li>
-                      <li class="active">Politics</li>
+                        <li><a href="index.html">Games</a></li>
+                        <li class="active">Politics</li>
                     </ol>
                     <div id="QuizContainer">
                         <div class="quiz-info">
@@ -105,11 +132,20 @@
                             <div class="quiz-questions animate__animated hidden">
                                 <h3>Who's the current president of Nigeria?</h3>
                                 <ul>
-                                    <li><a class="ans1" href="javascript:void(0)">Saint Yaraduwa</a></li>
-                                    <li><a class="ans2" href="javascript:void(0)">Embezzler Jonathan</a></li>
-                                    <li><a class="ans3" href="javascript:void(0)">Dictator Buhari</a></li>
-                                    <li><a class="ans4" href="javascript:void(0)">Naira Marley</a></li>
+                                    <!-- Add the following classes: "right-answer animate__flash" to li>a when user gets the answer right-->
+                                    <!-- Add the following classes: "wrong-answer animate__flash" to li>a when user gets the answer right-->
+                                    <li><a class="ans1 animate__animated" href="javascript:void(0)">Saint Yaraduwa</a></li>
+                                    <li><a class="ans2 animate__animated" href="javascript:void(0)">Embezzler Jonathan</a></li>
+                                    <li><a class="ans3 animate__animated wrong-answer" href="javascript:void(0)">Dictator Buhari</a></li>
+                                    <li><a class="ans4 animate__animated right-answer" href="javascript:void(0)">Naira Marley</a></li>
                                 </ul>
+                            </div>
+                            <div class="text-center hidden">
+                                <a href="javascript:void(0)" data-toggle="modal" data-target="#withdrawModal" class="btn btn-success">Cash Out</a>
+                            </div>
+                            <div class="quiz-summary hidden">
+                                <h3>Quiz Summary</h3>
+                                <p>You got<br><span>4/10</span><br>questions right</p>
                             </div>
                         </div>
                     </div>
