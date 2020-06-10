@@ -263,6 +263,30 @@ section {
     color: #333333;
 }
 
+.quiz-sub .card{
+    color: #000000;
+    padding: 15px;
+}
+
+.quiz-sub .card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-sub .card ul li{
+    margin-top: 15px;
+    color: #555;
+}
+
+.quiz-sub .card ul li span:first-of-type {
+    padding-right: 25px;
+}
+
+.quiz-sub .card .btn{
+    color: #fff;
+}
+
 .login_container {
     min-height: 100vh;
     background: #FECB2F;
