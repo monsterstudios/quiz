@@ -31,12 +31,10 @@
         };
     };
 
-    $('.quiz-play a').click(function(){
-    	$('.quiz-play').hide();
-	    $('.quiz-questions').removeClass('hidden').addClass("animate__fadeIn");
-	    $('.quiz-timer').countdown(1 * 60 * 1000, function(){
-	    	//Highlight the right answer
-	    });
+    // $('.quiz-play').hide();
+    $('.quiz-questions').removeClass('hidden').addClass("animate__fadeIn");
+    $('.quiz-timer').countdown(1 * 60 * 1000, function(){
+        //Highlight the right answer
     });
     
     // $('').countdown(3 * 1000, function() {
